@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\zedre\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.6.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\zedre\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codedom.providers.dotnetcompilerplatform\2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codedom.providers.dotnetcompilerplatform\2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+    <Import Project="$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.4.4\buildTransitive\EntityFramework.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgWebGrease Condition=" '$(PkgWebGrease)' == '' ">C:\Users\zedre\.nuget\packages\webgrease\1.6.0</PkgWebGrease>
+    <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">C:\Users\zedre\.nuget\packages\stylecop.analyzers.unstable\1.2.0.507</PkgStyleCop_Analyzers_Unstable>
+    <PkgModernizr Condition=" '$(PkgModernizr)' == '' ">C:\Users\zedre\.nuget\packages\modernizr\2.8.3</PkgModernizr>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\zedre\.nuget\packages\jquery\3.4.1</PkgjQuery>
+    <PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform Condition=" '$(PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform)' == '' ">C:\Users\zedre\.nuget\packages\microsoft.codedom.providers.dotnetcompilerplatform\2.0.1</PkgMicrosoft_CodeDom_Providers_DotNetCompilerPlatform>
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\zedre\.nuget\packages\entityframework\6.4.4</PkgEntityFramework>
+  </PropertyGroup>
+</Project>
