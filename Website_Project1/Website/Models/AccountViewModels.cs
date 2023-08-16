@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Website.Models
@@ -79,6 +80,12 @@ namespace Website.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+
+        public System.DateTime DateOfBirth { get; set;}
+
+        public string Nationality { get; set; }
     }
 
     public class ResetPasswordViewModel

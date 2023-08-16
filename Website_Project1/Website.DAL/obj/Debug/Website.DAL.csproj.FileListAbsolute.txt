@@ -1,0 +1,12 @@
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\Website.DAL.dll.config
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\Website.DAL.dll
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\Website.DAL.pdb
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\EntityFramework.dll
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\EntityFramework.xml
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\obj\Debug\Website.DAL.csproj.AssemblyReference.cache
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\obj\Debug\Website.DAL.csproj.CoreCompileInputs.cache
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\obj\Debug\Website.DAL.csproj.CopyComplete
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\obj\Debug\Website.DAL.dll
+C:\Users\zedre\source\repos\Website_Project1\Website.DAL\obj\Debug\Website.DAL.pdb

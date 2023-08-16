@@ -1,0 +1,300 @@
+﻿@model Website.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+
+}
+
+<style>
+
+    .panel {
+        background-color: #2b2b2b;
+        border-radius: 25px;  /* Kept the rounded border */
+        padding: 20px 40px;
+        box-shadow: 0px 4px 10px #00ff17;  /* Neon shadow for the panel */
+    }
+
+    .panel-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 26px;
+        color: #e0e0e0;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 12px;
+        margin: 5px 0;
+        border: 2px solid #666;
+        border-radius: 5px; /* Rounded border for input fields */
+        font-size: 16px;
+        color: #c3c3c3;
+        background-color: #a4f4cc;
+        outline: none;
+    }
+
+    .input-field:focus {
+        border-color: #00ff17;  /* Neon green border on focus */
+        box-shadow: 0 0 10px #00ff17;  /* Neon green glow on focus */
+    }
+
+    /* Responsiveness */
+    @@media (max-width: 768px) {
+        .input-title, .input-content {
+            flex: 1 0 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    /* Structural Styles */
+    .input-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .input-title {
+
+        flex: 1;
+        margin-right: 13px; /* Reduced margin */
+        font-weight: 600;
+        color: #ddd;
+    }
+    .elegant-hr {
+        border: 0;
+        border-top: 1px solid #aaa; /* Light gray color */
+        margin: 20px 0; /* Space out the horizontal rule a bit more */
+        width: 80%; /* Reduce the width for more elegance */
+    }
+
+
+    .input-content {
+        flex: 2;
+    }
+
+    label {
+        font-weight: normal;
+        font-family: 'Pacifico', sans-serif;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 18px;
+        color: #aaa;
+
+    }
+
+    input::-webkit-input-placeholder {
+        color: black;
+    }
+    #btnreg1 {
+        border: 2px solid gray;
+        font-weight: bold;
+        font-weight: bold, display: inline-block;
+        padding: 10px 30px;
+        border: 2px solid #00ff17; /* Neon border for the button */
+        border-radius: 5px;
+        font-size: 18px;
+        background: linear-gradient(to bottom, #B3B7D9, #555);
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D feel */
+    }
+        #btnreg1:hover {
+            color: black;
+            font-weight: bold;
+            background: linear-gradient(#a9e7d0); /* Slightly lighter gradient on hover */
+            box-shadow: 0 0 5px #00ff17; /* Neon green glow on hover */
+            animation: blink 0.5s 100;
+        }
+        #btnreg1:active {
+            transform: translateY(2px); /* Lift the button up a bit on hover */
+
+            background: linear-gradient(magenta); /* Slightly lighter gradient on hover */
+            box-shadow: 0 0 5px magenta; /* Neon green glow on hover */
+
+            border: 2px solid magenta; /* Neon border for the button */
+            animation: blink 0s 0;
+        }
+
+    #btnreg2 {
+        border: 2px solid gray;
+        font-weight: bold;
+        font-weight: bold, display: inline-block;
+        padding: 10px 30px;
+        border: 2px solid yellow; /* Neon border for the button */
+        border-radius: 5px;
+        font-size: 18px;
+        background: linear-gradient(to bottom, #B3B7D9, #555);
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D feel */
+    }
+
+        #btnreg2:hover {
+            color: black;
+            font-weight: bold;
+            background: linear-gradient(gold); /* Slightly lighter gradient on hover */
+            box-shadow: 0 0 5px gold; /* Neon green glow on hover */
+            animation: blink 0.5s 100;
+        }
+
+        #btnreg2:active {
+            transform: translateY(2px); /* Lift the button up a bit on hover */
+
+            background: linear-gradient(darkyellow); /* Slightly lighter gradient on hover */
+            box-shadow: 0 0 5px #0080fe; /* Neon green glow on hover */
+
+            border: 2px solid #0080fe; /* Neon border for the button */
+            animation: blink 0s 0;
+        }
+    @@keyframes blink {
+        0%, 100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+    }
+            
+}
+
+</style>
+
+
+
+
+
+<section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Student Registration Panel -->
+                    <div class="panel navbar-dark bg-dark">
+                        <h2 class="panel-title">Tutor Registration</h2>
+                        <div class="input-group">
+                            <label class="input-title">Name</label>
+                            <div class="input-content">
+                                <input type="text" class="input-field" placeholder="Name" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Surname</label>
+                            <div class="input-content">
+                                <input type="text" class="input-field" placeholder="Surname" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Date of Birth</label>
+                            <div class="input-content">
+                                <input type="date" class="input-field" style="color:black" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Nationality</label>
+                            <div class="input-content">
+                                <select style="color:black" class="input-field">
+                                    <option  value="" disabled selected>Nationality</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="India">India</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <!-- ... add all countries as needed ... -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Email</label>
+                            <div class="input-content">
+                                <input type="email" class="input-field" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Password</label>
+                            <div class="input-content">
+                                <input type="password" class="input-field" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div style="text-align:center">
+                            <hr class="elegant-hr" />
+                            <button id="btnreg1" class="">Register</button>
+                            <hr class="elegant-hr" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="panel navbar-dark bg-dark">
+                        <h2 class="panel-title">Student Registration</h2>
+
+                        <div class="input-group">
+                            <label class="input-title">Name</label>
+                            <div class="input-content">
+                                <input type="text" class="input-field" placeholder="Name" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Surname</label>
+                            <div class="input-content">
+                                <input type="text" class="input-field" placeholder="Surname" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Date of Birth</label>
+                            <div class="input-content">
+                                <input type="date" class="input-field" style="color:black" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Nationality</label>
+                            <div class="input-content">
+                                <select style="color:black" class="input-field">
+                                    <option  value="" disabled selected>Nationality</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">UK</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="India">India</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <!-- ... add all countries as needed ... -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Email</label>
+                            <div class="input-content">
+                                <input type="email" class="input-field" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-title">Password</label>
+                            <div class="input-content">
+                                <input type="password" class="input-field" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div style="text-align:center">
+                            <hr class="elegant-hr"/>
+                            <button id="btnreg2" class="">Register</button>
+                            <hr class="elegant-hr" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
